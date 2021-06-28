@@ -1,1 +1,1 @@
-https://anastasiadyachkova.github.io/SSTU-Web-Task3/EPAM_JS_Prac_Anastasia_Dyachkova 
+https://anastasiadyachkova.github.io/EPAM_JS_Prac_Anastasia_Dyachkova 
