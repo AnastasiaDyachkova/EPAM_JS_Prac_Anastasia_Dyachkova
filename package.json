@@ -1,11 +1,9 @@
 {
-  "name": "EPAM_JS_Prac_Anastasia_Dyachkova",
+  "name": "epam_js_prac_anastasia_dyachkova",
   "version": "1.0.0",
   "description": "https://anastasiadyachkova.github.io/EPAM_JS_Prac_Anastasia_Dyachkova",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnastasiaDyachkova/EPAM_JS_Prac_Anastasia_Dyachkova.git"
