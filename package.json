@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "https://anastasiadyachkova.github.io/EPAM_JS_Prac_Anastasia_Dyachkova",
   "main": "index.js",
-  
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnastasiaDyachkova/EPAM_JS_Prac_Anastasia_Dyachkova.git"
@@ -16,6 +19,11 @@
   },
   "homepage": "https://github.com/AnastasiaDyachkova/EPAM_JS_Prac_Anastasia_Dyachkova#readme",
   "devDependencies": {
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^1.6.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
     "webpack": "^5.41.1",
     "webpack-cli": "^4.7.2"
   }
