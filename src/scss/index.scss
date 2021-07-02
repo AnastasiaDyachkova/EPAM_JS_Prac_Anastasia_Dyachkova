@@ -1,9 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 $base-font: 'Roboto';
-$title-padding: 3em;
+$bg-color: #FFE5C7;
+$text-color: #130b03;
+$btn-color: #FFCD94;
 
-h1 {
- font-family: $base-font;
- padding: $title-padding;
+body {
+    background: white;
+    margin: 0 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.operating_mode {
+    font-family: $base-font;
+    color: $text-color;
+    position:absolute;
+    top: 38%;
+}
+
+.navbar {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:12%;
+    display: flex;
+    justify-content: space-evenly;
+    background: $bg-color;
+    box-shadow: 0px -3px 7px 0px rgba(38, 29, 2, 0.2);
+}
+
+.btn {
+    border: none;
+    font-size: 20px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $base-font;
+    background: $bg-color;
+    color:$text-color;
+}
+
+.btn:hover {
+    background: $btn-color;
+}
+
+.active-tab{
+    color: #FF8800;
 }
