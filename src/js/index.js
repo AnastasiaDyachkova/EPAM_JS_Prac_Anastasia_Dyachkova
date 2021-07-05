@@ -1,15 +1,14 @@
+import './scss/index.scss'
 
-console.log("Hello");
 let status = document.getElementById('status');
 let voislist = document.getElementById('vois-list');
 let micro = document.getElementById('micro');
 let stream = document.getElementById('stream');
 
-
 function colorChange(){
-    voislist.style.color = "#130b03";
-    micro.style.color = "#130b03";
-    stream.style.color = "#130b03";
+    voislist.classList.remove("active-tab");
+    micro.classList.remove("active-tab");
+    stream.classList.remove("active-tab");
 }
 
 let listText = "Active: all voices";
@@ -19,7 +18,7 @@ let streamText = "Active: stream";
 function switching(text,variable){
     status.innerText = text;
     colorChange();
-    variable.style.color = "#FF8800";
+    variable.classList.add("active-tab");
 }
 
 voislist.addEventListener('click', () => switching(listText,voislist));
