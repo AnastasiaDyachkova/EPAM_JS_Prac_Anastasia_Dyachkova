@@ -1,4 +1,4 @@
-import './scss/index.scss'
+
 
 let status = document.getElementById('status');
 let voislist = document.getElementById('vois-list');
