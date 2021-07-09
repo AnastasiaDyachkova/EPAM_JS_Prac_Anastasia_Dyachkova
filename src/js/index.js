@@ -1,9 +1,10 @@
-
-
 let status = document.getElementById('status');
-let voislist = document.getElementById('vois-list');
+let voislist = document.getElementById('voice-list');
 let micro = document.getElementById('micro');
 let stream = document.getElementById('stream');
+let play = document.getElementById('play');
+let end = document.getElementById('stop');
+let list = document.getElementById('list');
 
 function colorChange(){
     voislist.classList.remove("active-tab");
@@ -19,6 +20,9 @@ function switching(text,variable){
     status.innerText = text;
     colorChange();
     variable.classList.add("active-tab");
+    play.style.display = 'none';
+    end.style.display = 'none';
+    list.innerHTML = "";
 }
 
 voislist.addEventListener('click', () => switching(listText,voislist));

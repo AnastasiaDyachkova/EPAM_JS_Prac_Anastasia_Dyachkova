@@ -21,7 +21,7 @@ body {
     font-family: $base-font;
     color: $text-color;
     position:absolute;
-    top: 38%;
+    top: 20%;
 }
 
 .navbar {
@@ -54,4 +54,29 @@ body {
 
 .active-tab{
     color: #FF8800;
+}
+
+.play {
+    border: none;
+    background: white;
+    position:absolute;
+    top: 40%;
+    display: none;
+}
+
+.stop {
+    border: none;
+    background: white;
+    position:absolute;
+    top: 40%;
+    display: none;
+}
+
+.listVoice{
+    list-style-type: none;
+}
+
+#list{
+    position: absolute;
+    top: 33%;
 }
