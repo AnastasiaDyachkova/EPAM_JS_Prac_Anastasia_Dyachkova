@@ -37,9 +37,8 @@ body {
   font-family: "Roboto";
   background: #FFE5C7;
   color: #130b03; }
-
-.btn:hover {
-  background: #FFCD94; }
+  .btn:hover {
+    background: #FFCD94; }
 
 .active-tab {
   color: #FF8800; }
@@ -58,7 +57,7 @@ body {
   top: 40%;
   display: none; }
 
-.listVoice {
+.listValue {
   list-style-type: none; }
 
 #list {

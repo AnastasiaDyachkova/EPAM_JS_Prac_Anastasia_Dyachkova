@@ -1,5 +1,5 @@
 const { io } = require("socket.io-client");
-let streamBtn = document.getElementById('stream');
+const streamBtn = document.getElementById('stream');
 
 export function stream(){
     const socket = io.connect('https://voicy-speaker.herokuapp.com/');

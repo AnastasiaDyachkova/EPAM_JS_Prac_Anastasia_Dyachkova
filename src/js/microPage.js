@@ -1,16 +1,13 @@
 const { io } = require("socket.io-client");
-let play = document.getElementById('play');
-let end = document.getElementById('stop');
-let micro = document.getElementById('micro');
+const play = document.getElementById('play');
+const end = document.getElementById('stop');
+const micro = document.getElementById('micro');
 let mediaRec;
 
 function record(){
     play.style.display = 'none';
     end.style.display = 'block';
     const socket = io.connect('https://voicy-speaker.herokuapp.com/');
-    socket.on('connect', function() {
-        console.log("Подключено через микрофон");
-    });
 
     navigator.mediaDevices.getUserMedia({ audio: true })
         .then(stream => {
@@ -38,7 +35,7 @@ function pause(){
 
 play.addEventListener('click', record);
 end.addEventListener('click', pause);
-micro.addEventListener('click', function(){
+micro.addEventListener('click', () => {
     end.style.display = 'none';
     play.style.display = 'block';
 });

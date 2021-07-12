@@ -1,13 +1,13 @@
-let status = document.getElementById('status');
-let voislist = document.getElementById('voice-list');
-let micro = document.getElementById('micro');
-let stream = document.getElementById('stream');
-let play = document.getElementById('play');
-let end = document.getElementById('stop');
-let list = document.getElementById('list');
+const status = document.getElementById('status');
+const voiceList = document.getElementById('voiceList');
+const micro = document.getElementById('micro');
+const stream = document.getElementById('stream');
+const play = document.getElementById('play');
+const end = document.getElementById('stop');
+const list = document.getElementById('list');
 
 function colorChange(){
-    voislist.classList.remove("active-tab");
+    voiceList.classList.remove("active-tab");
     micro.classList.remove("active-tab");
     stream.classList.remove("active-tab");
 }
@@ -25,6 +25,6 @@ function switching(text,variable){
     list.innerHTML = "";
 }
 
-voislist.addEventListener('click', () => switching(listText,voislist));
+voiceList.addEventListener('click', () => switching(listText,voiceList));
 micro.addEventListener('click',() => switching(microText,micro));
 stream.addEventListener ('click',() => switching(streamText,stream));

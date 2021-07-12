@@ -1,5 +1,5 @@
-let voislist = document.getElementById('voice-list');
-let list = document.getElementById('list');
+const voiceList = document.getElementById('voiceList');
+const list = document.getElementById('list');
 
 export async function getList() {
     list.innerHTML = "";
@@ -12,12 +12,12 @@ export async function getList() {
         const audioBlob = new Blob([new Uint8Array(data[i].audioBlob[0].data).buffer]);
         const audioUrl = URL.createObjectURL(audioBlob);
         audio.src = audioUrl;
-        const li = document.createElement('li');
-        li.classList.add('listVoice');
-        li.appendChild(audio);
-        list.appendChild(li);
+        const listValue = document.createElement('li');
+        listValue.classList.add('listValue');
+        listValue.appendChild(audio);
+        list.appendChild(listValue);
     }
     
 }
 
-voislist.addEventListener('click', getList);
+voiceList.addEventListener('click', getList);

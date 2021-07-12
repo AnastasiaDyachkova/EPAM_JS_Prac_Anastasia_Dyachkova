@@ -46,10 +46,10 @@ body {
     font-family: $base-font;
     background: $bg-color;
     color:$text-color;
-}
-
-.btn:hover {
-    background: $btn-color;
+    
+    &:hover {
+        background: $btn-color;
+    }
 }
 
 .active-tab{
@@ -72,7 +72,7 @@ body {
     display: none;
 }
 
-.listVoice{
+.listValue{
     list-style-type: none;
 }
 
