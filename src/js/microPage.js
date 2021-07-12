@@ -4,7 +4,7 @@ const end = document.getElementById('stop');
 const micro = document.getElementById('micro');
 let mediaRec;
 
-function record(){
+const record = () =>{
     play.style.display = 'none';
     end.style.display = 'block';
     const socket = io.connect('https://voicy-speaker.herokuapp.com/');
@@ -27,14 +27,13 @@ function record(){
 
 }
 
-function pause(){
+
+play.addEventListener('click', record);
+end.addEventListener('click', () => {
     end.style.display = 'none';
     play.style.display = 'block';
     mediaRec.stop();
-}
-
-play.addEventListener('click', record);
-end.addEventListener('click', pause);
+});
 micro.addEventListener('click', () => {
     end.style.display = 'none';
     play.style.display = 'block';

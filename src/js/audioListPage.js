@@ -1,7 +1,7 @@
 const voiceList = document.getElementById('voiceList');
 const list = document.getElementById('list');
 
-export async function getList() {
+export const getList = async() => {
     list.innerHTML = "";
     const response = await fetch('https://voicy-speaker.herokuapp.com/voices');
     const data = await response.json();
